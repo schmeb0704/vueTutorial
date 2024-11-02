@@ -6,8 +6,8 @@ import JobListings from './components/JobListings.vue';
 </script>
 
 <template>
-  <Navbar></Navbar>
-  <Hero></Hero>
-  <HomeCards></HomeCards>
-  <JobListings></JobListings>
+  <Navbar/>
+  <Hero/>
+  <HomeCards/>
+  <JobListings :limit="3"/>
 </template>
