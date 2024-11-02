@@ -1,8 +1,6 @@
 
-<script>
+<script setup>
 import {ref} from 'vue'
-export default{
-  setup(){
     const name = 'john doe'
     const status = ref("active")
     const tasks = ref([
@@ -22,14 +20,6 @@ export default{
       }
     }
 
-    return {
-      name,
-      status,
-      tasks,
-      toggleStatus,
-    }
-  }
-}
 </script>
 <template>
 <h1>{{ name }}</h1>
