@@ -4,6 +4,7 @@ import { reactive, onMounted } from 'vue';
 import { useRoute, RouterLink } from 'vue-router';
 import fetchSingleJobData from '@/functions/fetchSingleJob';
 import axios from 'axios';
+import BackButton from '@/components/BackButton.vue';
 
 const route = useRoute()
 const jobId = route.params.id
@@ -38,17 +39,7 @@ onMounted(async()=>{
 </script>
 
 <template>
-    <section>
-      <div class="container m-auto py-6 px-6">
-        <RouterLink
-          to="/jobs"
-          class="text-green-500 hover:text-green-600 flex items-center"
-        >
-          <i class="fas fa-arrow-left mr-2"></i> Back to Job Listings
-        </RouterLink>
-      </div>
-    </section>
-
+    <BackButton/>
     <section v-if="!state.isLoading" class="bg-green-50">
       <div class="container m-auto py-10 px-6">
         <div class="grid grid-cols-1 md:grid-cols-70/30 w-full gap-6">
