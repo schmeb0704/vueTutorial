@@ -83,34 +83,6 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
-    },
-    {
-      "id": "95cb",
-      "title": "Cook",
-      "type": "Full-Time",
-      "description": "Tig luto og hotdog",
-      "salary": "$50K - $60K",
-      "location": "CDO",
-      "company": {
-        "name": "Hotdog Co.",
-        "description": "Experts in Hotdogs",
-        "contactEmail": "glizzie@hotdog.co",
-        "contactPhone": "31"
-      }
-    },
-    {
-      "id": "7e76",
-      "title": "Sales man",
-      "type": "Remote",
-      "description": "Deleniti sit non it",
-      "salary": "$80K - $90K",
-      "location": "Qui suscipit nihil e",
-      "company": {
-        "name": "Barlow and Hicks Inc",
-        "description": "Reprehenderit proide",
-        "contactEmail": "hafy@mailinator.com",
-        "contactPhone": "+1 (213) 848-4558"
-      }
     }
   ]
 }
