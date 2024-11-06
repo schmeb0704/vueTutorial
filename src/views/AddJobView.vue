@@ -36,7 +36,7 @@ const addJob = async () => {
   }
 
   try {
-    const response = await axios.post(`${import.meta.env.VITE_BASE_URL}/jobs`, newJobObj)
+    const response = await axios.post(`/listings`, newJobObj)
    //to-do - show toast 
    toast.success("Job added successfully")
    router.push(`/jobs/${response.data.id}`)

@@ -1,10 +1,10 @@
 import axios from 'axios'
 
-const BASE_URL = import.meta.env.VITE_BASE_URL 
+const BASE_URL = '/listings'
 
 const fetchSingleJobData = async (jobId) => {
   try {
-    const response = await axios.get(`${BASE_URL}/jobs/${jobId}`)
+    const response = await axios.get(`${BASE_URL}/${jobId}`)
     const data = response.data
     console.log(data)
 

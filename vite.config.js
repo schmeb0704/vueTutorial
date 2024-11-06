@@ -5,15 +5,16 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    vue(),
-  ],
-  server:{
-    port: 3000
+  plugins: [vue()],
+  server: {
+    port: 3000,
+    proxy: {
+      '/listings': 'http://localhost:5000',
+    },
   },
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  }
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
 })

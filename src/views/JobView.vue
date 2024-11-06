@@ -22,7 +22,7 @@ const deleteJob = async ()=>{
     const confirm = window.confirm('Are you sure you want to delete this job?')
     if(confirm){
 
-      await axios.delete(`${import.meta.env.VITE_BASE_URL}/jobs/${jobId}`) 
+      await axios.delete(`/listings/${jobId}`) 
       toast.success("Job deleted successfully")
       router.push('/jobs')
     }

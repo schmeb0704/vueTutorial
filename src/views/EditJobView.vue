@@ -46,7 +46,7 @@ const updateJob = async () => {
   }
 
   try {
-    const response = await axios.put(`${import.meta.env.VITE_BASE_URL}/jobs/${jobId}`, updatedJobObj)
+    const response = await axios.put(`/listings/${jobId}`, updatedJobObj)
    //to-do - show toast 
    toast.success("Job edited successfully")
    router.push(`/jobs/${response.data.id}`)
@@ -59,7 +59,7 @@ const updateJob = async () => {
 
 onMounted(async()=>{
   try {
-    const response = await axios.get(`${import.meta.env.VITE_BASE_URL}/jobs/${jobId}`)
+    const response = await axios.get(`/listings/${jobId}`)
     state.job = response.data
     //populate inputs
     form.type = state.job.type
